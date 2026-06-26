@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - A.R. Agarwal International School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght=400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="floating-buttons">
+        <a href="https://wa.me/919876543210?text=Hello!%20I%20am%20interested%20in%20admission" target="_blank" class="floating-btn floating-whatsapp" title="WhatsApp">💬</a>
+        <a href="tel:+919876543210" class="floating-btn floating-call" title="Call Now">📞</a>
+    </div>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span>📞 <a href="tel:+919876543210" style="color:white;text-decoration:none;">+91 98765 43210</a></span>
+                        <span>✉️ <a href="mailto:info@aragarwalschool.edu.in" style="color:white;text-decoration:none;">info@aragarwalschool.edu.in</a></span>
+                        <span>📍 Delhi, India</span>
+                    </div>
+                    <div class="quick-links">
+                        <a href="admission.html" class="highlight-link">Admissions Open 2026-27</a>
+                        <a href="login.html">Parent Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo-section">
+                        <a href="index.html"><img src="logo.svg" alt="A.R. Agarwal International School" class="logo-img"></a>
+                        <div class="logo-text">
+                            <h1>A.R. Agarwal</h1>
+                            <h2>International School</h2>
+                            <p>Excellence in Education</p>
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admission.html" class="active">Admissions</a></li>
+                        <li><a href="index.html#infrastructure">Infrastructure</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home" style="min-height: 55vh;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 2.8rem;">Admissions 2026-27</h1>
+            <p class="hero-subtitle">Secure your child's future today</p>
+        </div>
+    </section>
+
+    <section class="admissions" id="admissions">
+        <div class="container">
+            <h2 class="section-title">Apply for Admission</h2>
+            <div class="admission-content">
+                <div class="admission-info">
+                    <h3>Admission Process</h3>
+                    <p>We follow a simple and transparent admission process to ensure every deserving child gets an opportunity to study at our institution.</p>
+                    <ul class="admission-features">
+                        <li>✓ Online Application Form</li>
+                        <li>✓ Document Verification</li>
+                        <li>✓ Interaction Session</li>
+                        <li>✓ Fee Payment & Confirmation</li>
+                    </ul>
+                    <h3 style="margin-top: 40px;">Eligibility Criteria</h3>
+                    <ul class="admission-features">
+                        <li>✓ Nursery: Age 3+ years as on 31st March</li>
+                        <li>✓ Jr. KG: Age 4+ years as on 31st March</li>
+                        <li>✓ Sr. KG: Age 5+ years as on 31st March</li>
+                        <li>✓ Class I onwards: Previous class passing certificate</li>
+                    </ul>
+                </div>
+                <div class="admission-form-container" id="formContainer">
+                    <form id="admissionForm">
+                        <h3 style="margin-bottom:20px;color:#8B4513;font-family:'Playfair Display',serif;">Fill Application Form</h3>
+                        <div class="form-group">
+                            <label>Student's Full Name *</label>
+                            <input type="text" name="studentName" required placeholder="Enter student's name">
+                        </div>
+                        <div class="form-group">
+                            <label>Class Applying For *</label>
+                            <select name="classApplying" required>
+                                <option value="">Select Class</option>
+                                <option value="Nursery">Nursery</option>
+                                <option value="Jr. KG">Jr. KG</option>
+                                <option value="Sr. KG">Sr. KG</option>
+                                <option value="Class I">Class I</option>
+                                <option value="Class II">Class II</option>
+                                <option value="Class III">Class III</option>
+                                <option value="Class IV">Class IV</option>
+                                <option value="Class V">Class V</option>
+                                <option value="Class VI">Class VI</option>
+                                <option value="Class VII">Class VII</option>
+                                <option value="Class VIII">Class VIII</option>
+                                <option value="Class IX">Class IX</option>
+                                <option value="Class X">Class X</option>
+                                <option value="Class XI">Class XI</option>
+                                <option value="Class XII">Class XII</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth *</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Father's Name *</label>
+                            <input type="text" name="fatherName" required placeholder="Enter father's name">
+                        </div>
+                        <div class="form-group">
+                            <label>Mother's Name *</label>
+                            <input type="text" name="motherName" required placeholder="Enter mother's name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" name="email" required placeholder="Enter email address">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" name="phone" required placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label>Residential Address *</label>
+                            <textarea name="address" rows="3" required placeholder="Enter complete address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Previous School (if any)</label>
+                            <input type="text" name="previousSchool" placeholder="Name of previous school">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+                <div class="form-success" id="formSuccess" style="display:none;">
+                    <h3 style="color:#2E8B57;font-family:'Playfair Display',serif;font-size:2rem;">✓ Application Submitted!</h3>
+                    <p>Thank you for applying to A.R. Agarwal International School.</p>
+                    <p>Our admissions team will contact you within 24-48 hours for the next steps.</p>
+                    <a href="index.html" class="btn btn-primary" style="margin-top: 20px;">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A.R. Agarwal International School</h3>
+                    <p>Committed to excellence in education and holistic development of every student.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admin.html" style="color:#bbe1fa;">Admin Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul>
+                        <li><a href="index.html#infrastructure">Smart Classrooms</a></li>
+                        <li><a href="index.html#infrastructure">Computer Lab</a></li>
+                        <li><a href="index.html#infrastructure">Science Labs</a></li>
+                        <li><a href="index.html#infrastructure">Sports Complex</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.R. Agarwal International School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

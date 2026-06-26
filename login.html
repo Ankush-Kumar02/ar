@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Login - A.R. Agarwal International School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&family=Playfair+Display:wght=400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/919876543210?text=Hello!%20I%20am%20interested%20in%20admission" target="_blank" class="floating-btn floating-whatsapp" title="Chat on WhatsApp">
+            💬
+        </a>
+        <a href="tel:+919876543210" class="floating-btn floating-call" title="Call Now">
+            📞
+        </a>
+    </div>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span>📞 <a href="tel:+919876543210" style="color: white; text-decoration: none;">+91 98765 43210</a></span>
+                        <span>✉️ <a href="mailto:info@aragarwalschool.edu.in" style="color: white; text-decoration: none;">info@aragarwalschool.edu.in</a></span>
+                        <span>📍 Delhi, India</span>
+                    </div>
+                    <div class="quick-links">
+                        <a href="admission.html" class="highlight-link">Admissions Open 2026-27</a>
+                        <a href="login.html">Parent Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo-section">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="A.R. Agarwal International School" class="logo-img">
+                        </a>
+                        <div class="logo-text">
+                            <h1>A.R. Agarwal</h1>
+                            <h2>International School</h2>
+                            <p>Excellence in Education</p>
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="index.html#infrastructure">Infrastructure</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home" style="min-height: 40vh; background: linear-gradient(135deg, rgba(10,35,81,0.95) 0%, rgba(26,59,105,0.9) 100%);">
+        <div class="hero-overlay" style="display: none;"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-slide-left">Parent Login</h1>
+            <p class="hero-subtitle animate-slide-right">Access your child's academic information</p>
+        </div>
+    </section>
+
+    <section class="admissions" id="admissions">
+        <div class="container">
+            <div id="loginContainer">
+                <h2 class="section-title">Sign In to Your Account</h2>
+                <form id="loginForm" style="max-width: 400px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <div style="display: flex; flex-direction: column; margin-bottom: 25px;">
+                        <label for="username" style="font-weight: 600; color: #333; margin-bottom: 8px;">Username</label>
+                        <input type="text" id="username" required style="padding: 15px; border: 2px solid #eee; border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+                        <label for="password" style="font-weight: 600; color: #333; margin-bottom: 8px;">Password</label>
+                        <input type="password" id="password" required style="padding: 15px; border: 2px solid #eee; border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                    </div>
+                    <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">Demo: Username = <strong>parent</strong>, Password = <strong>demo123</strong></p>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary" style="padding: 15px 50px; font-size: 1.1rem;">Login</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="dashboardContainer" style="display: none;">
+                <h2 class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    Welcome to Parent Dashboard
+                    <button id="logoutBtn" class="btn btn-secondary" style="padding: 10px 30px;">Logout</button>
+                </h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 40px;">
+                    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">👦</div>
+                        <h3 style="color: #0a2351; font-family: 'Playfair Display', serif;">Student Name</h3>
+                        <p style="color: #666;">Rahul Kumar</p>
+                        <p style="color: #0a2351; font-weight: 600; margin-top: 10px;">Class 5A</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
+                        <h3 style="color: #0a2351; font-family: 'Playfair Display', serif;">Attendance</h3>
+                        <p style="color: #666;">95%</p>
+                        <p style="color: #4caf50; font-weight: 600; margin-top: 10px;">Excellent</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">📝</div>
+                        <h3 style="color: #0a2351; font-family: 'Playfair Display', serif;">Grades</h3>
+                        <p style="color: #666;">A Grade</p>
+                        <p style="color: #0a2351; font-weight: 600; margin-top: 10px;">GPA: 9.2</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <h3 style="color: #0a2351; margin-bottom: 20px; font-family: 'Playfair Display', serif;">📢 Latest Notices</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 15px; border-bottom: 1px solid #eee; color: #333;">Parent-Teacher Meeting on 15th March 2026 at 10:00 AM</li>
+                        <li style="padding: 15px; border-bottom: 1px solid #eee; color: #333;">Annual Sports Day on 20th March 2026</li>
+                        <li style="padding: 15px; color: #333;">Science Fair on 25th March 2026</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A.R. Agarwal International School</h3>
+                    <p>Committed to excellence in education and holistic development of every student.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admin.html" style="color: #bbe1fa;">Admin Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul>
+                        <li><a href="index.html#infrastructure">Smart Classrooms</a></li>
+                        <li><a href="index.html#infrastructure">Computer Lab</a></li>
+                        <li><a href="index.html#infrastructure">Science Labs</a></li>
+                        <li><a href="index.html#infrastructure">Sports Complex</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.R. Agarwal International School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+            const loginContainer = document.getElementById('loginContainer');
+            const dashboardContainer = document.getElementById('dashboardContainer');
+            const logoutBtn = document.getElementById('logoutBtn');
+
+            // Check if already logged in
+            const isLoggedIn = localStorage.getItem('parentLoggedIn');
+            if (isLoggedIn === 'true') {
+                showDashboard();
+            }
+
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                if (username === 'parent' && password === 'demo123') {
+                    localStorage.setItem('parentLoggedIn', 'true');
+                    showDashboard();
+                } else {
+                    alert('Invalid credentials! Please use demo: parent / demo123');
+                }
+            });
+
+            logoutBtn.addEventListener('click', function() {
+                localStorage.removeItem('parentLoggedIn');
+                loginContainer.style.display = 'block';
+                dashboardContainer.style.display = 'none';
+            });
+
+            function showDashboard() {
+                loginContainer.style.display = 'none';
+                dashboardContainer.style.display = 'block';
+            }
+
+            // Add scroll effect to navbar
+            const mainNav = document.querySelector('.main-nav');
+            if (mainNav) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        mainNav.style.padding = '8px 0';
+                        mainNav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.15)';
+                    } else {
+                        mainNav.style.padding = '15px 0';
+                        mainNav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
